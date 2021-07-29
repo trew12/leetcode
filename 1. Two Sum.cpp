@@ -6,7 +6,7 @@ You can return the answer in any order.
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<int, int> val_to_ind;
+        unordered_map<int, int> val_to_ind;
         for (int i = 0; i < nums.size(); i++){
             int diff = target - nums[i];
             if (val_to_ind.count(diff) > 0){
